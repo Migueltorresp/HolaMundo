@@ -11,7 +11,7 @@ package ventanas;
  */
 public class Ventana1 extends javax.swing.JFrame {
 
-    /**
+    /******
      * Creates new form Ventana1
      */
     public Ventana1() {
