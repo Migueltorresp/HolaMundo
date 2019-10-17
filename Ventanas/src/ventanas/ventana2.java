@@ -7,7 +7,7 @@ package ventanas;
 
 /**
  *
- * @author Programación
+ * @author Programación DE FUN
  */
 public class ventana2 extends javax.swing.JFrame {
 
