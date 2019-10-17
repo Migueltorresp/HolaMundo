@@ -27,7 +27,7 @@
               <EmptySpace pref="162" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="BtnVentana3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -44,7 +44,7 @@
               <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="BtnVentana3" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="101" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -59,10 +59,13 @@
         <Property name="text" type="java.lang.String" value="Ventana 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="BtnVentana3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ventana 3"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnVentana3ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

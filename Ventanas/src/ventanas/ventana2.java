@@ -28,14 +28,19 @@ public class ventana2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        BtnVentana3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Ventana 2");
 
-        jButton1.setText("Ventana 3");
+        BtnVentana3.setText("Ventana 3");
+        BtnVentana3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnVentana3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -45,7 +50,7 @@ public class ventana2 extends javax.swing.JFrame {
                 .addContainerGap(162, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(BtnVentana3)
                         .addGap(157, 157, 157))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -57,12 +62,17 @@ public class ventana2 extends javax.swing.JFrame {
                 .addGap(90, 90, 90)
                 .addComponent(jLabel1)
                 .addGap(71, 71, 71)
-                .addComponent(jButton1)
+                .addComponent(BtnVentana3)
                 .addContainerGap(101, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtnVentana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnVentana3ActionPerformed
+        // TODO add your handling code here:
+        new Ventana3().setVisible(true);
+    }//GEN-LAST:event_BtnVentana3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,7 +110,7 @@ public class ventana2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton BtnVentana3;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
