@@ -37,8 +37,18 @@ public class Ventana1 extends javax.swing.JFrame {
         jLabel1.setText("Ventana1");
 
         BtnVentana2.setText("Ventana 2");
+        BtnVentana2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnVentana2ActionPerformed(evt);
+            }
+        });
 
         BrnSalir.setText("Salir");
+        BrnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BrnSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,6 +80,15 @@ public class Ventana1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BrnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BrnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_BrnSalirActionPerformed
+
+    private void BtnVentana2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnVentana2ActionPerformed
+        new ventana2().setVisible(true);
+        new Ventana1().setVisible(false);
+    }//GEN-LAST:event_BtnVentana2ActionPerformed
 
     /**
      * @param args the command line arguments

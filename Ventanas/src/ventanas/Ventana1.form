@@ -68,11 +68,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ventana 2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnVentana2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BrnSalir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BrnSalirActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
